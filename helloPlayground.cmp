@@ -1,0 +1,11 @@
+<aura:component>
+    <aura:attribute name="messages" type="List"
+        default="['You look nice today.','Great weather we\'re having.','How are you?']"/>
+   
+    <p>hi! {!v.messages}</p>
+    <p><c:helloMessage message="{!v.messages[0]}"/></p>
+    <p><c:helloMessage message="{!v.messages[1]}"/></p>
+    <p><c:helloMessage message="{!v.messages[2]}"/></p>
+    
+    
+</aura:component>
